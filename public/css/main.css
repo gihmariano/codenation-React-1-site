@@ -1,0 +1,394 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+*{
+	box-sizing: border-box;
+}
+
+/*global styles*/
+body
+{
+	font-family: "Montserrat", sans-serif;
+}
+.container
+{
+	max-width: 61.475em;
+	margin: 0 auto;
+}
+.space-top
+{
+	padding: .4em .6125em;
+}
+.clearFix
+{
+	clear: both;
+	overflow: hidden;
+}
+/*efeito hover nos links de navegção do header*/
+#main-menu a:hover, #genero a:hover
+{
+	transition: color .3s ease-in-out;
+	color: #e4bb23;
+}
+/*header styles*/
+/*menu, logo and profile picture*/
+header
+{
+	background-image: url(../img/capa-madmax2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+header:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, .6) 0%, rgba(0, 212, 255, 0) 80%);
+}
+#top-content nav, #top-content li, #top-content #perfil, #perfil img, #perfil p
+{
+	display: inline-block;
+	z-index: 1;
+}
+#top-content a img
+{
+	margin-right: 6.35em;
+	vertical-align: top;
+	position: relative;
+	z-index: 1;
+}
+#top-content
+{
+	font-size: 1.3em;
+	padding-top: 1em;
+}
+#main-menu ul li
+{
+	font-size: .6875em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+	top: -.8em;
+}
+#main-menu a
+{
+	color: white;
+	text-decoration: none;
+}
+#main-menu li:nth-child(2)
+{
+	margin: 0 2.55em;
+}
+#perfil img
+{
+	width: 2.25em;
+	border-radius: 50%;
+}
+#perfil
+{
+	margin-left: 7.5em;
+}
+#perfil p
+{
+	font-size: 0.6875em;
+	position: relative;
+	top: -1.2em;
+	margin-left: .5em;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: white;
+}
+#title
+{
+	position: relative;
+	z-index: 1;
+	padding-bottom: .5em;
+}
+#title h1
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 4em;
+	color: #fff;
+	padding-left: .2em;
+}
+#genero ul li
+{
+	display: inline-block;
+	position: relative;
+	top: -2em;
+	left: -1.3em;
+}
+#genero a
+{
+	text-transform: uppercase;
+	color: white;
+	font-weight: 300;
+	font-size: .8em;
+	text-decoration: none;
+}
+#genero li:nth-child(2)
+{
+	margin: 0 .8em;
+}
+#trailer
+{
+	display: inline-block;
+	position: relative;
+	top: -.7em;
+	left: .8em;
+	background: #e4bb23;
+	padding: 0.6em 1.9em;
+	height: 3.3em;
+	border-radius: 1.5em;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+#trailer:after
+{
+	content: "";
+	display: block; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 1.4375em;
+}
+#trailer:hover:after
+{
+	transition: all .5s ease-in-out;
+	background: rgba(0, 0, 0, .3);
+}
+i[class^=fa]
+{
+	color: black;
+	font-size: 1.5em;
+	margin-left: .5em;
+	position: relative;
+	top: .12em;
+}
+#information
+{
+	display: block;
+	margin-left: .8em;
+	font-size: .9em;
+	font-weight: 300;
+	margin-bottom: 4.1em;
+}
+#information p:first-child
+{
+	text-transform: capitalize;
+	color: white;
+}
+#information p:last-child
+{
+	color: #bc9a1d;
+}
+/*main and body page style*/
+main
+{
+	background: #f2f2f2;
+}
+#catalog ul
+{
+	position: relative;
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+#catalog li
+{
+	display: inline-block;
+	padding: 0 0 1.2em;
+	margin-right: 2em;
+}
+#catalog li:hover
+{
+	box-shadow: inset 0 -2px 0 #e4bb23;
+}
+#catalog a
+{
+	color: #e4bb23;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .825em;
+}
+/*cards style*/
+#cards
+{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+#cards article
+{
+	width: 24%;
+	margin-right: 8px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background: white;
+	height: 100%;
+}
+#cards article:last-child
+{
+	margin-right: 0;
+}
+#cards img
+{
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.synopsis, .rating
+{
+	padding: 0 .855em;
+}
+.synopsis h3
+{
+	font-size: .95em;
+	text-transform: uppercase;
+}
+.genre
+{
+	display: block;
+}
+.genre a
+{
+	text-decoration: none;
+	color: #e4bb23;
+	font-size: .85em;
+}
+.genre a:hover
+{
+	text-decoration: underline;
+}
+.rating i, .rating p
+{
+	display: inline-block;
+}
+.rating p
+{
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.rating i
+{
+	color: #ccc;
+	margin-left: 0;
+	margin-right: 5.5em;
+}
+.rating i:hover
+{
+	color: #e74c3c;
+	transition: color .2s linear;
+}
+/*card's hover effect*/
+.hover-effect
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.hover-effect h2
+{
+	padding: 0 15px;
+	align-self: center;
+	position: absolute;
+	display: block;
+	top: 22%;
+	text-align: center;
+	visibility: hidden;
+	text-transform: uppercase;
+	color: #e4bb23;
+	font-size: 1.35em;
+	line-height: 1;
+	font-weight: bold;
+}
+.hover-effect a i
+{
+	position: absolute;
+	top: 36%;
+	left: 1.49em;
+	background: transparent;
+	color: #fff;
+	font-size: 3em;
+	visibility: hidden;
+}
+.hover-effect a i:hover
+{
+	color: #e4bb23;
+}
+.hover-effect:hover h2, .hover-effect:hover a i
+{
+	visibility: visible;
+	transition: all .2s ease-in-out;
+}
+.hover-effect:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 69%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.hover-effect:hover:before
+{
+	background: rgba(0, 0, 0, .5);
+	display: inline-block;
+	transition: all .3s ease-in-out;
+}
+/*footer style*/
+footer
+{
+	padding: 40px 0 20px 0;
+}
+footer img
+{
+	margin-left: 12px;
+}
+#networks
+{
+	float: right;
+	margin-right: 30px;
+	position: relative;
+	top: -5px;
+}
+#networks li
+{
+	display: inline-block;
+}
+#networks li:nth-child(2)
+{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#networks li a i
+{
+	color: #bababa;
+	font-size: 1.55em;
+}
+#networks li a:hover i[class$="twitter"]
+{
+	color: #55acee;
+	transition: color .2s ease-in-out;
+}
+#networks li a:hover i[class$="official"]
+{
+	color: #3b5998;
+	transition: color .2s ease-in-out;
+}
+#networks li a:hover i[class$="instagram"]
+{
+	color: #e95950;
+}
